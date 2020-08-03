@@ -52,7 +52,7 @@ const SignUp: React.FC = () => {
         addToast({
           type: 'success',
           title: 'Cadastro realizado',
-          description: 'Você já pode fazer seu logon no GoBarber!'
+          description: 'Você já pode fazer seu logon no GoBarber!',
         });
       } catch (err) {
         if (err instanceof Yup.ValidationError) {
@@ -65,10 +65,12 @@ const SignUp: React.FC = () => {
         addToast({
           type: 'error',
           title: 'Erro no cadastro',
-          description: 'Ocorreu um erro ao fazer cadastro, tente novamente.'
+          description: 'Ocorreu um erro ao fazer cadastro, tente novamente.',
         });
       }
-    }, [addToast, history]);
+    },
+    [addToast, history],
+  );
 
   return (
     <Container>
@@ -91,8 +93,8 @@ const SignUp: React.FC = () => {
           </Form>
           <Link to="/">
             <FiArrowLeft />
-          Voltar
-        </Link>
+            Voltar
+          </Link>
         </AnimationContainer>
       </Content>
     </Container>
