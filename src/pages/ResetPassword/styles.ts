@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import { shade } from 'polished';
+
 import signInBackground from '../../assets/sign-in-background.png';
 
 export const Container = styled.div`
@@ -16,14 +17,14 @@ export const Content = styled.div`
   max-width: 700px;
 `;
 
-export const appearFromLeft = keyframes`
+const appearFromLeft = keyframes`
   from {
     opacity: 0;
-    transform: transleX(-50px);
+    transform: translateX(-50px);
   }
   to {
-    opacity: 2;
-    transform: transleX(0);
+    opacity: 1;
+    transform: translateX(0);
   }
 `;
 
@@ -82,5 +83,3 @@ export const Background = styled.div`
   background: url(${signInBackground}) no-repeat center;
   background-size: cover;
 `;
-
-/** Usat unform, yup pra validacao, criar um hook de autenticacao usando context api */

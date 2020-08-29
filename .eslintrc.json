@@ -35,9 +35,14 @@
     "react/jsx-props-no-spreading": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "react/jsx-filename-extension": [1, {
-      "extensions": [".tsx"]
-    }],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".tsx"
+        ]
+      }
+    ],
     "react/prop-types": "off",
     "@typescript-eslint/explicit-function-return-type": [
       "error",
@@ -46,6 +51,7 @@
       }
     ],
     "@typescript-eslint/ban-types": "off",
+    "import/no-duplicates": "off",
     "import/prefer-default-export": "off",
     "import/extensions": [
       "error",
