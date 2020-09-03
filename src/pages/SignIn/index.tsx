@@ -47,7 +47,7 @@ const SignIn: FC = () => {
           password: data.password,
         });
 
-        history.push('/');
+        history.push('/dashboard');
       } catch (err) {
         if (err instanceof Yup.ValidationError) {
           const errors = getValidationErrors(err);
@@ -55,7 +55,6 @@ const SignIn: FC = () => {
 
           return;
         }
-
         addToast({
           type: 'error',
           title: 'Erro na autenticação',
