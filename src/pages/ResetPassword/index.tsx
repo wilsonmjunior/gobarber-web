@@ -26,7 +26,7 @@ interface ResetPasswordFormData {
 const ResetPassword: React.FC = () => {
   const formRef = useRef<FormHandles>(null);
 
-  const { history, location, query } = useRouter();
+  const { history, query } = useRouter();
 
   const { addToast } = useToast();
 
